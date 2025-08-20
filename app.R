@@ -3,6 +3,8 @@
 # =========================
 #  INSTALL & LOAD PACKAGES
 # =========================
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
+
 pkgs <- c(
   "shiny","shinydashboard","readxl","dplyr","tidyr","plotly","DT","leaflet",
   "shinyWidgets","stringr","forcats","htmltools","purrr"
