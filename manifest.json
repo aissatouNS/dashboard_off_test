@@ -1711,11 +1711,11 @@
     }
   },
   "files": {
-    "app.R": {
-      "checksum": "44c37b351eaa76cc53174cfde7dba08e"
-    },
-    "data/analysis.xlsx": {
+    "analysis.xlsx": {
       "checksum": "e380319fb13181e843f8172fb814c508"
+    },
+    "app.R": {
+      "checksum": "1c1d40d134b067b71e8afc20aea7f020"
     }
   },
   "users": null
