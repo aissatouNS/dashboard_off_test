@@ -573,4 +573,5 @@ server <- function(input, output, session) {
 # =========================
 #  RUN APP
 # =========================
-shinyApp(ui, server)
+#shinyApp(ui, server)
+shinyApp(ui = ui, server = server)
