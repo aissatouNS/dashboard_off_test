@@ -29,7 +29,7 @@ to_col <- function(s) {
 #  LOAD DATA
 # =========================
 # Adjust path
-data <- read_excel("C:/Users/PC/OneDrive - One Family Foundation/GCSI/Global Ecosystem/dashboard_repo/analysis.xlsx", sheet = 1)
+data <- readxl::read_excel("C:/Users/PC/OneDrive - One Family Foundation/GCSI/Global Ecosystem/dashboard_repo/analysis.xlsx", sheet = 1)
 
 # Clean column names
 names(data) <- str_replace_all(names(data), "\\s+", "_")
