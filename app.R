@@ -5,28 +5,28 @@
 # =========================
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 
-# pkgs <- c(
-#   "shiny","shinydashboard","readxl","dplyr","tidyr","plotly","DT","leaflet",
-#   "shinyWidgets","stringr","forcats","htmltools","purrr"
-# )
-# to_install <- setdiff(pkgs, rownames(installed.packages()))
-# if (length(to_install)) install.packages(to_install, dependencies = TRUE)
-# invisible(lapply(pkgs, library, character.only = TRUE))
+pkgs <- c(
+  "shiny","shinydashboard","readxl","dplyr","tidyr","plotly","DT","leaflet",
+  "shinyWidgets","stringr","forcats","htmltools","purrr"
+)
+to_install <- setdiff(pkgs, rownames(installed.packages()))
+if (length(to_install)) install.packages(to_install, dependencies = TRUE)
+invisible(lapply(pkgs, library, character.only = TRUE))
 
-library(shiny)
-library(shinydashboard)
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(plotly)
-library(DT)
-library(leaflet)
-library(shinyWidgets)
-library(stringr)
-library(forcats)
-library(htmltools)
-library(forcats)
-library(purrr)
+# library(shiny)
+# library(shinydashboard)
+# library(readxl)
+# library(dplyr)
+# library(tidyr)
+# library(plotly)
+# library(DT)
+# library(leaflet)
+# library(shinyWidgets)
+# library(stringr)
+# library(forcats)
+# library(htmltools)
+# library(forcats)
+# library(purrr)
 
 
 # Small helper
