@@ -1,17 +1,33 @@
-#Global Ecosystem Mapping
+# ================== GLOBAL ECOSYSTEM MAPPING ===================
 
 # =========================
 #  INSTALL & LOAD PACKAGES
 # =========================
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 
-pkgs <- c(
-  "shiny","shinydashboard","readxl","dplyr","tidyr","plotly","DT","leaflet",
-  "shinyWidgets","stringr","forcats","htmltools","purrr"
-)
-to_install <- setdiff(pkgs, rownames(installed.packages()))
-if (length(to_install)) install.packages(to_install, dependencies = TRUE)
-invisible(lapply(pkgs, library, character.only = TRUE))
+# pkgs <- c(
+#   "shiny","shinydashboard","readxl","dplyr","tidyr","plotly","DT","leaflet",
+#   "shinyWidgets","stringr","forcats","htmltools","purrr"
+# )
+# to_install <- setdiff(pkgs, rownames(installed.packages()))
+# if (length(to_install)) install.packages(to_install, dependencies = TRUE)
+# invisible(lapply(pkgs, library, character.only = TRUE))
+
+library(shiny)
+library(shinydashboard)
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(DT)
+library(leaflet)
+library(shinyWidgets)
+library(stringr)
+library(forcats)
+library(htmltools)
+library(forcats)
+library(purrr)
+
 
 # Small helper
 `%||%` <- function(x, y) if (!is.null(x)) x else y
@@ -29,7 +45,7 @@ to_col <- function(s) {
 #  LOAD DATA
 # =========================
 # Adjust path
-data <- readxl::read_excel("C:/Users/PC/OneDrive - One Family Foundation/GCSI/Global Ecosystem/dashboard_repo/analysis.xlsx", sheet = 1)
+data <- readxl::read_excel("data/analysis.xlsx", sheet = 1)
 
 # Clean column names
 names(data) <- str_replace_all(names(data), "\\s+", "_")
